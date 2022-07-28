@@ -41513,7 +41513,7 @@ var addTextmarkerPlugin = function addTextmarkerPlugin(ckEditorConfiguration, op
 		isVisible: (0, _plowJs.$get)(['formatting', 'textmarker']),
 
 		component: _TextmarkerButton2.default,
-		icon: 'plus-square',
+		icon: 'highlighter',
 		tooltip: 'Mark a span'
 	}, 'before strong');
 

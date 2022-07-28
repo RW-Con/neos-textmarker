@@ -32,7 +32,7 @@ manifest('RWcon.Neos.Textmarker:Textmarker', {}, globalRegistry => {
 		isVisible: $get(['formatting', 'textmarker']),
 
 		component: TextmarkerButton,
-		icon: 'plus-square',
+		icon: 'highlighter',
 		tooltip: 'Mark a span',
 	}, 'before strong');
 
