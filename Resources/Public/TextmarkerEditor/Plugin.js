@@ -41428,11 +41428,7 @@ var TextmarkerPlugin = function (_Plugin) {
 				model: 'highlight',
 				view: {
 					name: 'span',
-					classes: 'textmarker-class',
-
-					styles: {
-						'color': '#dae820'
-					}
+					classes: 'textmarker'
 				}
 			};
 			this.editor.conversion.attributeToElement(config);
@@ -41498,7 +41494,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 // it needs to return the updated ckEditorConfiguration.
 var addTextmarkerPlugin = function addTextmarkerPlugin(ckEditorConfiguration, options) {
-	if ((0, _plowJs.$get)(['formatting', 'Neos.Neos.Ui.ExtensibilityExamples:MyCustomSpan'], options.editorOptions)) {
+	if ((0, _plowJs.$get)(['formatting', 'textmarker'], options.editorOptions)) {
 		ckEditorConfiguration.plugins = ckEditorConfiguration.plugins || [];
 		return (0, _plowJs.$add)('plugins', _TextmarkerPlugin2.default, ckEditorConfiguration);
 	}
@@ -41514,7 +41510,7 @@ var addTextmarkerPlugin = function addTextmarkerPlugin(ckEditorConfiguration, op
 		// the path in isActive must match the commandName from the line above, to ensure the active state
 		// of the button automatically toggles.
 		isActive: (0, _plowJs.$get)('highlight'),
-		isVisible: (0, _plowJs.$get)(['formatting', 'Neos.Neos.Ui.ExtensibilityExamples:MyCustomSpan']),
+		isVisible: (0, _plowJs.$get)(['formatting', 'textmarker']),
 
 		component: _TextmarkerButton2.default,
 		icon: 'plus-square',

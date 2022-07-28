@@ -13,7 +13,7 @@ import TextmarkerButton from './TextmarkerButton';
 //
 // it needs to return the updated ckEditorConfiguration.
 const addTextmarkerPlugin = (ckEditorConfiguration, options) => {
-	if ($get(['formatting', 'Neos.Neos.Ui.ExtensibilityExamples:MyCustomSpan'], options.editorOptions)) {
+	if ($get(['formatting', 'textmarker'], options.editorOptions)) {
 		ckEditorConfiguration.plugins = ckEditorConfiguration.plugins || [];
 		return $add('plugins', TextmarkerPlugin, ckEditorConfiguration);
 	}
@@ -29,7 +29,7 @@ manifest('RWcon.Neos.Textmarker:Textmarker', {}, globalRegistry => {
 		// the path in isActive must match the commandName from the line above, to ensure the active state
 		// of the button automatically toggles.
 		isActive: $get('highlight'),
-		isVisible: $get(['formatting', 'Neos.Neos.Ui.ExtensibilityExamples:MyCustomSpan']),
+		isVisible: $get(['formatting', 'textmarker']),
 
 		component: TextmarkerButton,
 		icon: 'plus-square',
