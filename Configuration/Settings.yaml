@@ -1,0 +1,7 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          'RWcon.Neos.Textmarker:TextmarkerEditor':
+            resource: resource://RWcon.Neos.Textmarker/Public/TextmarkerEditor/Plugin.js

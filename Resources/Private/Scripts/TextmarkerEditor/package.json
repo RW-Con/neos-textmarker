@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "build": "neos-react-scripts build",
+        "watch": "neos-react-scripts watch"
+    },
+    "neos": {
+        "buildTargetDirectory": "../../../Public/TextmarkerEditor"
+    },
+    "devDependencies": {
+        "@neos-project/neos-ui-extensibility": "*"
+    },
+    "dependencies": {
+        "@ckeditor/ckeditor5-basic-styles": "^10.1.0",
+        "@ckeditor/ckeditor5-core": "^10.1.0"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "rwcon/neos-textmarker",
+    "type": "neos-package",
+    "require": {
+        "neos/neos-ui": "~7.2.0"
+    },
+    "extra": {
+        "neos": {
+            "package-key": "RWcon.Neos.Textmarker"
+        }
+    }
+}
